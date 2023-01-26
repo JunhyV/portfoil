@@ -1,0 +1,32 @@
+.footer{
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 4rem);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer__img{
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 1139px){
+   .footer{
+    height: 100%;
+    grid: repeat(3, 3rem) / 100%;
+    gap: .5rem;
+    margin-right: 4rem;
+   }
+   .footer__img{
+    width: 2.2rem;
+    margin-left: 1rem;
+    }
+}
+@media (max-width: 480px){
+    .footer{
+        height: 100%;
+        grid: 100% / repeat(3, 3rem);
+        gap: .5rem;
+        margin-right: 0;
+       }
+}

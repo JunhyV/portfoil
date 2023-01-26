@@ -1,0 +1,80 @@
+.layout__mode{
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    background-color: var(--white);
+}
+.layout{
+    height: 100%;
+    padding: 1rem;
+    border: solid 2px var(--black);
+    display: grid;
+    grid-template-columns: 28rem auto;
+}
+.layout___aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 1139px){
+    .layout{
+        height: 100%;
+        grid: 10rem auto / 100%
+    }
+    .layout___aside{
+        flex-direction: initial;
+        align-items: center;
+    }
+}
+@media (max-width: 480px){
+    .layout{
+        grid: 22rem auto / 100%
+    }
+    .layout__mode{
+        padding: 2rem;
+    }
+    .layout___aside{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.darkmode__btn{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    z-index: 1;
+}
+@media (max-width: 480px){
+    .darkmode__btn{
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        z-index: 1;
+    }
+}
+.darkmode{
+    background-color: var(--black);
+}
+.darkmode *{
+    color: var(--white);
+    border-color: var(--white);
+}
+.darkmode input, .darkmode textarea{
+    background-color: var(--black);
+    border-color: var(--white);
+}
+.darkmode svg{
+    stroke: var(--white);
+}
+.darkmode input::placeholder, .darkmode textarea::placeholder{
+    color: var(--white);
+}
+.darkmode__btn:hover{
+    cursor: pointer;
+}
+

@@ -1,0 +1,28 @@
+:root{
+  --primary: purple;
+  --secondary: rgb(9, 245, 9);
+  --black: #353535;
+  --white: #f2f2f2;
+}
+html{
+	box-sizing: border-box; 
+	font-size: 62.5%;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-family: 'Arvo', serif;
+}
+
+h1{
+  font-size: 2.6rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.8rem;
+}

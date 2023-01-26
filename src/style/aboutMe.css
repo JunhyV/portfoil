@@ -1,0 +1,27 @@
+.aboutMe{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    overflow: scroll;
+    padding-right: 40%;
+}
+@media (max-width: 1139px){
+   .aboutMe{
+    padding-right: 45%;
+   }
+}
+@media (max-width: 480px){
+    .aboutMe{
+     padding-right: 20%;
+    }
+ }
+.aboutMe::-webkit-scrollbar{
+    display: none;
+}
+
+.aboutMe__h1, .aboutMe__p{
+    margin-bottom: 2rem;
+}
+.aboutMe__ul{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+}
